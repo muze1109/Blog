@@ -1,0 +1,76 @@
+.widget-wrap {
+  width: 200px;
+  padding: 0 24px;
+  // background-color: chartreuse;
+
+  .widget {
+    width: 100%;
+    margin-bottom: 24px;
+    font-size: 12px;
+
+    li {
+      height: 32px;
+      margin: 5px;
+      text-align: center;
+    }
+
+    .widget-title {
+      margin-bottom: 6px;
+      padding: 6px 0;
+      font-size: 14px;
+      font-weight: normal;
+      border-bottom: solid 1px #687385;
+    }
+
+    .widget-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 24px;
+      border-radius: 4px;
+      border: solid 1px #eee;
+      background-color: #fff;
+
+      .my-photo {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .my-information {
+        padding: 10px;
+        line-height: 1.3em;
+      }
+
+      .my-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        a {
+          display: block;
+          font-size: 28px;
+          transition: all .3s;
+          &:hover {
+            transform: translateY(-8px);
+          }
+        }
+
+        li {
+          // width: 32px;
+          // height: 32px;
+          // line-height: 32px;
+          margin: 0 10px;
+          text-align: center;
+          // background-color: blue;
+        }
+      }
+    }
+  }
+}

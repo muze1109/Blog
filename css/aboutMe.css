@@ -1,0 +1,75 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.site-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+.site-wrap > div,
+.site-wrap > section {
+  padding: 24px;
+  box-sizing: border-box;
+  margin: 24px 0;
+  color: #fff;
+}
+.site-wrap > div:hover,
+.site-wrap > section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+}
+.my-photo,
+.about-site,
+.advice-site,
+.post-class {
+  width: 320px;
+  border-radius: 2rem;
+}
+.about-site,
+.advice-site,
+.post-class {
+  height: 380px;
+}
+.my-photo {
+  padding: 0 !important;
+  height: 370px;
+  overflow: hidden;
+  background-image: linear-gradient(46deg, #E97B44, #F4BE66);
+}
+.my-photo img {
+  height: 100%;
+}
+.information {
+  width: 700px;
+  height: 370px;
+  border-radius: 3rem;
+  background-color: #A7AAAB;
+}
+.information .info-content {
+  display: flex;
+}
+.about-site {
+  background-color: #A7AAAB;
+}
+.advice-site {
+  background-color: #A7AAAB;
+}
+.post-class {
+  display: flex;
+  flex-direction: column;
+  line-height: 36px;
+  background-color: #EEF1F2;
+}
+.post-class a {
+  color: var(--color-secondary);
+  display: flex;
+  justify-content: space-between;
+}
+.post-class a:hover {
+  color: var(--color-main);
+}

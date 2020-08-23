@@ -1,0 +1,30 @@
+
+html,
+body{
+	font-family: 'TeXGyreAdventor', "Century Gothic", "Didact Gothic", "Yu Gothic", sans-serif;
+	font-weight: 300;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'TeXGyreAdventor', "Century Gothic", "Didact Gothic", "Yu Gothic", sans-serif;
+}
+
+.container {
+  width: 1108px;
+  margin: auto;
+}
+
+:root {
+  --color-main: #030d2d;
+  --color-secondary: #687385;
+}

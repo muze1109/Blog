@@ -1,0 +1,53 @@
+.directory-wrap li:nth-of-type(odd) {
+  background-color: #fff;
+}
+.directory-wrap li:nth-of-type(even) {
+  background-color: #F6F7F7;
+}
+.directory-wrap li .post-wrap {
+  box-sizing: border-box;
+  padding: 24px;
+}
+.directory-wrap li .post-wrap .posted-date {
+  color: var(--color-secondary);
+}
+.directory-wrap li .post-wrap .entry-title {
+  color: yellowgreen;
+  padding-bottom: 24px;
+}
+.directory-wrap li .post-wrap #post-article {
+  max-height: calc(1.6em * 3);
+  line-height: 1.6em;
+  font-size: 14px;
+  color: var(--color-main);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.directory-wrap li .post-wrap .readMore {
+  display: inline-block;
+  width: 120px;
+  padding: 8px 10px;
+  margin: 10px 0;
+  border: solid 2px yellowgreen;
+  text-align: center;
+  color: yellowgreen;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.directory-wrap li .post-wrap .readMore:hover {
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: white;
+  background-color: yellowgreen;
+}
+footer {
+  position: static;
+  bottom: 0;
+  width: 100vw;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 24px;
+  text-align: center;
+}

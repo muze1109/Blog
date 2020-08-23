@@ -1,0 +1,113 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f2f5f8;
+}
+.slogan {
+  font-size: 13px;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(-90deg) translate(-50%, 50%);
+  transform-origin: 0 50%;
+  text-align: center;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+.index-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 24px;
+}
+.index-inner .index-left {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(1108px / 2);
+  padding: 32px 0;
+  text-align: center;
+}
+.index-inner .index-left h1 {
+  color: var(--color-main);
+  font-size: 36px;
+  font-weight: bolder;
+}
+.index-inner .index-left p {
+  font-size: 20px;
+  color: var(--color-secondary);
+}
+.index-inner .index-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(1108px / 2);
+  padding: 0 24px;
+  max-width: 320px;
+}
+.index-inner .index-right .other-links,
+.index-inner .index-right .post-class li a {
+  margin-bottom: 6px;
+  border-radius: 10px;
+  width: 100%;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+.index-inner .index-right .post-class li a:hover {
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.index-inner .index-right .other-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 24px;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+}
+.index-inner .index-right .other-links a {
+  font-size: 28px;
+  transition: all 0.3s;
+}
+.index-inner .index-right .other-links a:hover {
+  transform: translateY(-8px);
+}
+.index-inner .index-right .post-class {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.index-inner .index-right .post-class li {
+  margin-bottom: 4px;
+}
+.index-inner .index-right .post-class a {
+  position: relative;
+  display: block;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 24px;
+  color: var(--color-secondary);
+}
+.index-inner .index-right .post-class a .goIn {
+  position: absolute;
+  right: 1em;
+}
+.index-inner .index-right .post-class a:hover > .goIn {
+  color: #fff;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 24px;
+  text-align: center;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>木直-Directory</title>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/widget.css">
+  <link rel="stylesheet" href="../css/muze.css">
+  <link rel="stylesheet" href="../css/directory.css">
+  <script src="../js/axios.min.js"></script>
+  <!-- <script src="../js/axios.min.js"></script> -->
+</head>
+
+<body>
+  <header>
+    <div class="progress-bar" id="progress"></div>
+    <div class="header-top container">
+      <!-- logo and link to index -->
+      <h1 class="logo"><a href="../index.html">MUZE-木直</a></h1>
+
+      <!-- toggle-start -->
+      <input type="checkbox" id="toggler">
+      <label for="toggler">
+        <div class="hamburger-container">
+          <span></span>
+          <span></span>
+        </div>
+      </label>
+      <!-- toggle-end -->
+
+      <nav id="collapse">
+        <ul class="nav-left">
+          <li><a href="essays-directory.html">心情随笔</a></li>
+          <li><a href="technology-directory.html">技术分析</a></li>
+          <li><a href="archive-directory.html" style="color: yellowgreen;" >个人归档</a></li>
+          <li><a href="bookReview-directory.html">阅读书评</a></li>
+          <li><a href="aboutMe.html">关于木直</a></li>
+        </ul>
+
+        <div class="nav-right">
+          <a href="javascript:;">search</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <ul class="directory-wrap">
+      
+    </ul>
+  </main>
+
+
+
+
+  <footer>
+    <p>MUZE-木直 &copy;粤ICP备19161592</p>
+  </footer>
+
+
+
+
+  <script>
+    {
+
+      axios.get('http://localhost:3000/articles?start=0&limit=-1').then(({data}) => {
+        const articles = data.articles;
+        const directoryWrap = document.querySelector('.directory-wrap');
+        
+
+        for (let post of articles) {
+          directoryWrap.innerHTML += `
+            <li>
+              <section class="post-wrap container">
+                <div class="posted-date">${post.data.date}</div>
+                <h2 class="entry-title">${post.data.title}</h2>
+                <div id="post-article">${post.content}</div>
+                <span><a href="./article.html?title=${post.data.title}" class="readMore" >READ MORE</a></span>      
+              </section>
+            </li>
+          `;
+        }
+      });
+    }
+  </script>
+  <script src="../js/header.js"></script>
+</body>
+
+</html>

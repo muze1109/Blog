@@ -1,0 +1,132 @@
+body {
+  background-color: #F4F7F9;
+}
+.site-main {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.site-main .content {
+  width: 800px;
+  box-sizing: border-box;
+  padding: 0 24px;
+}
+.site-main .content .article-banner {
+  width: 100%;
+  overflow: hidden;
+}
+.site-main .content .article-banner img {
+  width: 100%;
+}
+.site-main .content .post-wrap .posted-date {
+  margin: 0 auto;
+  padding-bottom: 16px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+.site-main .content .post-wrap h1 {
+  font-weight: normal;
+  line-height: 4rem;
+  margin: 0 0 1.75rem;
+  padding: 20px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 4rem;
+}
+.site-main .content .post-wrap h2 {
+  font-weight: normal;
+  line-height: 3rem;
+  margin: 0 0 1.9375rem;
+  padding: 0 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+.site-main .content .post-wrap h3 {
+  font-weight: normal;
+}
+.site-main .content .post-wrap h4 {
+  font-weight: normal;
+}
+.site-main .content .post-wrap h5 {
+  font-size: 1.125rem;
+  font-weight: normal;
+}
+.site-main .content .post-wrap h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.site-main .content .post-wrap p {
+  color: #111;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin: 0 0 1.25rem;
+}
+.site-main .content .post-wrap img {
+  width: 100%;
+}
+.site-main .content .post-wrap a {
+  color: #990000;
+  text-decoration: none;
+}
+.site-main .content .post-wrap a:hover {
+  text-decoration: underline;
+}
+.site-main .content .post-wrap table {
+  margin-bottom: 20px;
+}
+.site-main .content .post-wrap table th,
+.site-main .content .post-wrap table td {
+  padding: 8px;
+  line-height: 1.25rem;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+}
+.site-main .content .post-wrap table th {
+  font-weight: bold;
+}
+.site-main .content .post-wrap table thead th {
+  vertical-align: bottom;
+}
+.site-main .content .post-wrap table caption + thead tr:first-child th,
+.site-main .content .post-wrap table caption + thead tr:first-child td,
+.site-main .content .post-wrap table colgroup + thead tr:first-child th,
+.site-main .content .post-wrap table colgroup + thead tr:first-child td,
+.site-main .content .post-wrap table thead:first-child tr:first-child th,
+.site-main .content .post-wrap table thead:first-child tr:first-child td {
+  border-top: 0;
+}
+.site-main .content .post-wrap table tbody + tbody {
+  border-top: 2px solid #ddd;
+}
+.site-main .content .post-wrap code {
+  padding: 0.5em;
+  /*background: #f0f0f0;*/
+  border: 1px solid #ccc;
+  padding: 0.1em;
+  font-size: 0.9em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+}
+.site-main .content .post-wrap input {
+  border-style: ridge;
+}
+.site-main .content .post-wrap blockquote {
+  margin: 0 0 1.11111rem;
+  padding: 0.5rem 1.11111rem 0 1.05556rem;
+  border-left: 1px solid gray;
+}
+.site-main .content .post-wrap blockquote,
+.site-main .content .post-wrap blockquote p {
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+footer {
+  position: static;
+  bottom: 0;
+  width: 100vw;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 24px;
+  text-align: center;
+}

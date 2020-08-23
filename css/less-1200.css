@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+}
+.index-inner {
+  flex-wrap: wrap;
+}
+.index-inner .index-left {
+  width: 100% !important;
+}
+.index-inner .index-left p {
+  display: none;
+}
+.index-inner .index-right {
+  width: 100% !important;
+}
+.site-main {
+  flex-wrap: wrap;
+}
+.site-main .content {
+  width: 100%;
+}
+.site-main .widget-wrap {
+  width: 100%;
+}
+.site-wrap {
+  align-items: center;
+  flex-direction: column;
+}
+.my-photo {
+  margin: auto;
+}
+.about-site,
+.advice-site,
+.post-class,
+.information {
+  width: 100%;
+}
+body {
+  height: auto;
+}

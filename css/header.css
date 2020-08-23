@@ -1,0 +1,66 @@
+header {
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+  margin-bottom: 24px;
+  background-color: #fff;
+}
+header .progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 0%;
+  background-size: 100%;
+  overflow: hidden;
+}
+header .progress-bar::before {
+  display: block;
+  content: " ";
+  width: 100vw;
+  height: 2px;
+  background: linear-gradient(90deg, #ffffff, #0000ff);
+}
+header .tags-post a,
+header nav a {
+  font-size: 12px;
+  color: var(--color-secondary);
+  transition: color 0.3s ease-in-out;
+}
+header .tags-post a:hover,
+header nav a:hover {
+  color: var(--color-main);
+}
+header li:nth-of-type(n+2) {
+  padding-left: 24px;
+}
+header .header-top {
+  display: flex;
+  box-sizing: border-box;
+  padding: 20px 24px;
+  border-bottom: solid 1px #eee;
+}
+header .header-top .logo {
+  min-width: 150px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 24px;
+}
+header .header-top .logo a {
+  color: var(--color-main);
+}
+header .header-top #toggler {
+  display: none;
+}
+header .header-top nav {
+  display: flex;
+  width: 100%;
+  line-height: 32px;
+}
+header .header-top nav .nav-left {
+  display: flex;
+}
+header .header-top nav .nav-left li {
+  line-height: 32px;
+}
+header .header-top nav .nav-right {
+  margin-left: auto;
+}
